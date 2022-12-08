@@ -1,0 +1,39 @@
+<!-- <table class="table">
+    <tr *ngFor="let product of products">
+        <td>{{product.productID}}</td>
+        <td>{{product.productName}}</td>
+        <td>{{product.categoryID}}</td>
+        <td>{{product.unitPrice}}</td>
+        <td>{{product.unitsInStock}}</td>
+        
+    </tr>
+</table> -->
+<div *ngIf="dataLoad==false" class="spinner-border text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<table *ngIf="dataLoad!=false" class="table">
+  <thead > 
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Ürün Adı</th>
+      <th scope="col">Fiyat</th>
+      <th scope="col">Stok Adedi<th>
+     <th scope="col"> Kategori<th>
+    </tr>
+  <tbody class="table-group-divider">
+    <tr *ngFor="let product of products">
+      <th scope="row">{{product.productID}}</th>
+      <td>{{product.productName}}</td>
+      <td>{{product.unitPrice}}</td>
+      <td>{{product.unitsInStock}}</td>
+      <td></td>
+      <td>{{product.categoryID}}</td>
+    </tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Berkay Çetinkaya</td>
+  </tbody>
+</table> 
