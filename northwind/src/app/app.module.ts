@@ -10,6 +10,7 @@ import { CartSummaryComponent } from './components/cart-summary/cart-summary.com
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
+import { DenemeComponent } from './components/deneme/deneme.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { LoginComponent } from './components/login/login.component';
     NaviComponent,
     CartSummaryComponent,
     ProductAddComponent,
-    LoginComponent
+    LoginComponent,
+    DenemeComponent
   ],
   imports: [
     BrowserModule,
